@@ -4,17 +4,155 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <title>DWH-WebPortal-Workbooks</title>
+    <link href="Css/Style.css" rel="stylesheet" type="text/css" />
+ 
+    <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+   <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 549px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
+<form id="Form1" runat="server">
+<input type="hidden" id="ArrivalStart" runat="server"/> 
+<table width=1000 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" border="0"  width="1000"  background="images/mastBG.jpg" height= 138>
+<tr>
+<td width = 12></td>
+<td class="style1">
+<img src="images/kenyaflag.jpg"  height="106" style="width: 159px"/>
+<img src="images/pepfar.jpg"  height="106" style="width: 134px"/>
+
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="1000"  background="images/menuBG.jpg" height=25>
+<tr>
+<td align=center class = "menu_nav" width=60><a href="">
+Home</a>
+</td>
+<td width = 685>
+</td>
+<td class ="submenu_nav">
+<b>Current Log in:</b>&nbsp;<%Response.Write(Session["stfFname"]);%>.<%Response.Write(Session["stfLname"]);%> (<a href ="lgout.aspx">Log out</a>)
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3></td>
+</tr>
+
+<tr>
+<td valign=top>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td class ="submenu_nav" width=180 valign=top>
+<div id="accordion">
+<h1> Work Books</h1>
+<div>
+<a href=" ">
+Art Cohort Analysis</a>
+</div>
+<h3>Views</h3>
+<div>
+<p>
+<a href=" ">
+Numbers On Care</a>
+</p>
+<p>
+<a href=" ">
+Art Out Comes</a>
+</p>
+<p>
+<a href=" ">
+Art Out Comes By Gender</a>
+</p>
+<p>
+<a href=" ">
+Art Regiment Changes</a>
+</p>
+<p>
+<a href=" ">
+Pre-Art OutComes</a>
+</p>
+</div>
+<h3>User Information  </h3>
+<div>
+<p>
+<a href="ChangePassword.aspx">Change Password</a>
+</p>
+
+<p>
+    <a href="AdditonalUserInformation.aspx">Additonal User Information </a>
+</p>
+
+
+
+<p>
+    <a href="RecoverPassword.aspx">Recover Password </a>
+</p>
+
+</div>
+
+
+</div>
+
+</td>
+
+  
+<td valign=top>
+<table cellpadding=0 cellspacing=0 width=660 border=0 >
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+</table>
+</td> 
+ </tr>    
+</table>
+</td>
+</tr>
+<%-- <tr>
+<td height=5></td>
+</tr>--%>
+
+<tr>
+<td>
+<table cellpadding=0 cellspacing=0 border=0 width=1000>
+<tr>
+<td height=2 style="background-color:#000066" colspan=3>
+</td>
+</tr>
+<tr>
+<td height=5></td>
+</tr>
+<tr>
+<td class ="submenu_nav" align=right>
+
+&nbsp;&nbsp;&copy;&nbsp;2015&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved 
+</td>
+</tr>
+</table>
+</td>
+</tr>
+ </table>             
+ </form>
 </body>
 </html>

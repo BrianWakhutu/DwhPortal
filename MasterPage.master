@@ -115,17 +115,17 @@ Pre-Art OutComes</a>
 <h3>User Information  </h3>
 <div>
 <p>
-<a href="ChangePassword.aspx">Change Password</a>
+<a href="../ChangePassword.aspx">Change Password</a>
 </p>
 
 <p>
-    <a href="AdditonalUserInformation.aspx">Additonal User Information </a>
+    <a href="../AdditonalUserInformation.aspx">Additonal User Information </a>
 </p>
 
 
 
 <p>
-    <a href="RecoverPassword.aspx">Recover Password </a>
+    <a href="../RecoverPassword.aspx">Recover Password </a>
 </p>
 
 </div>
@@ -133,36 +133,36 @@ Pre-Art OutComes</a>
 <h3>Administration </h3>
 <div>
 <p>
-    <a href="Administration/AddWorkbooks.aspx">Add Workbooks </a>
+    <a href="../Administration/AddWorkbooks.aspx">Add Workbooks </a>
 </p>
 
 <p>
-    <a href="Administration/AddViews.aspx"> Add Views</a> 
+    <a href="../Administration/AddViews.aspx"> Add Views</a> 
 </p>
 <p>
-    <a href="Administration/ManageUsers.aspx">Manage Users</a>
+    <a href="../Administration/ManageUsers.aspx">Manage Users</a>
 </p>
 </div>
 
 <h3>Membership </h3>
 <div>
 <p>
-    <a href="Membership/CreateUserAccount.aspx">Create User Account</a>
+    <a href="../Membership/CreateUserAccount.aspx">Create User Account</a>
 </p>
 
 <p>
-    <a href="Membership/AdditionalUserInformation.aspx">Aditional User Information</a>
+    <a href="../Membership/AdditionalUserInformation.aspx">Aditional User Information</a>
 </p>
 
 </div>
 <h3> Roles</h3>
 <div>
 <p>
-    <a href="Roles/ManageRoles.aspx">Manage Roles</a> 
+    <a href="../Roles/ManageRoles.aspx">Manage Roles</a> 
 </p>
 
 <p>
-    <a href="Roles/UsersAndRoles.aspx">Manage Users and Roles</a>
+    <a href="../Roles/UsersAndRoles.aspx">Manage Users and Roles</a>
 </p>
 
 </div>

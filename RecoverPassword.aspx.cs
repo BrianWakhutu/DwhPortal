@@ -11,4 +11,8 @@ public partial class RecoverPassword : System.Web.UI.Page
     {
 
     }
+    protected void RecoverPwd_SendingMail(object sender, MailMessageEventArgs e)
+    {
+        e.Message.CC.Add("webmaster@example.com");
+    }
 }

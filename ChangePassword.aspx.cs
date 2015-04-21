@@ -11,4 +11,9 @@ public partial class ChangePassword : System.Web.UI.Page
     {
 
     }
+
+    protected void ChangePwd_ChangedPassword(object sender, EventArgs e)
+    {
+
+    }
 }

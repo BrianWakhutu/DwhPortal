@@ -15,8 +15,9 @@
             $("#accordion").accordion();
         });
     </script>
+
    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
+   </asp:ContentPlaceHolder>
    
 </head>
 <body>
@@ -116,17 +117,22 @@ Pre-Art OutComes</a>
 <h3>User Information  </h3>
 <div>
 <p>
-<a href="../ChangePassword.aspx">Change Password</a>
+
+
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ChangePassword.aspx">Change Password</asp:HyperLink>
 </p>
 
 <p>
-    <a href="../AdditonalUserInformation.aspx">Additonal User Information </a>
+   
+
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AdditonalUserInformation.aspx">Additonal User Information</asp:HyperLink>
 </p>
 
 
 
 <p>
-    <a href="../RecoverPassword.aspx">Recover Password </a>
+    
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~//RecoverPassword.aspx">Recover Password</asp:HyperLink>
 </p>
 
 </div>
@@ -134,36 +140,46 @@ Pre-Art OutComes</a>
 <h3>Administration </h3>
 <div>
 <p>
-    <a href="../Administration/AddWorkbooks.aspx">Add Workbooks </a>
+   
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Administration/AddWorkbooks.aspx">Add Workbooks</asp:HyperLink>
+
 </p>
 
 <p>
-    <a href="../Administration/AddViews.aspx"> Add Views</a> 
+   
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Administration/AddViews.aspx">Add Views</asp:HyperLink>
 </p>
 <p>
-    <a href="../Administration/ManageUsers.aspx">Manage Users</a>
+
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Administration/ManageUsers.aspx">Manage Users</asp:HyperLink>
 </p>
 </div>
 
 <h3>Membership </h3>
 <div>
 <p>
-    <a href="../Membership/CreateUserAccount.aspx">Create User Account</a>
+ 
+
+        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Membership/CreateUserAccount.aspx">Create User Account</asp:HyperLink>
 </p>
 
 <p>
-    <a href="../Membership/AdditionalUserInformation.aspx">Aditional User Information</a>
+    
+        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Membership/AdditionalUserInformation.aspx">Aditional User Information</asp:HyperLink>
 </p>
 
 </div>
 <h3> Roles</h3>
 <div>
 <p>
-    <a href="../Roles/ManageRoles.aspx">Manage Roles</a> 
+
+
+    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Roles/ManageRoles.aspx">Manage Roles</asp:HyperLink>
 </p>
 
 <p>
-    <a href="../Roles/UsersAndRoles.aspx">Manage Users and Roles</a>
+<asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Roles/UsersAndRoles.aspx">Manage Users and Roles</asp:HyperLink>
+   
 </p>
 
 </div>
@@ -174,6 +190,7 @@ Pre-Art OutComes</a>
 <td valign=top>
 <table cellpadding=0 cellspacing=0 width=660 border=0 >
  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+
 </table>
 </td> 
  </tr>    
